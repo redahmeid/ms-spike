@@ -1,0 +1,13 @@
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/com.thameswater.deps.json
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/com.thameswater.runtimeconfig.json
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/com.thameswater.runtimeconfig.dev.json
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/com.thameswater.dll
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/bin/Debug/netcoreapp2.0/com.thameswater.pdb
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.csproj.CoreCompileInputs.cache
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.AssemblyInfoInputs.cache
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.AssemblyInfo.cs
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.dll
+/Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.pdb

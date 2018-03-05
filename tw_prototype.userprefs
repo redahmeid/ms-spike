@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{E77FDB67-E123-4B79-B6B4-041E404A9049}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="tw_prototype/api/Response/Response.cs">
+    <Files>
+      <File FileName="tw_prototype/Dockerfile" Line="16" Column="33" />
+      <File FileName="tw_prototype/Startup.cs" Line="37" Column="26" />
+      <File FileName="tw_prototype/Tests/ScheduleTests.cs" Line="22" Column="21" />
+      <File FileName="tw_prototype/com.thameswater.csproj" Line="1" Column="1" />
+      <File FileName="tw_prototype/Program.cs" Line="15" Column="7" />
+      <File FileName="tw_prototype/appsettings.json" Line="1" Column="1" />
+      <File FileName="tests/WorkTests.cs" Line="14" Column="2" />
+      <File FileName="tw_prototype/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="tw_prototype/Models/Job.cs" Line="15" Column="1" />
+      <File FileName="tw_prototype/Models/Address.cs" Line="4" Column="31" />
+      <File FileName="tw_prototype/Models/Customer.cs" Line="4" Column="32" />
+      <File FileName="tw_prototype/api/Controllers/JobController.cs" Line="13" Column="44" />
+      <File FileName="tw_prototype/api/Response/Response.cs" Line="10" Column="16" />
+      <File FileName="tw_prototype/api/Response/Link.cs" Line="11" Column="47" />
+      <File FileName="tw_prototype/Models/Model.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.com.thameswater PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
