@@ -36,7 +36,7 @@ namespace com.thameswater.api.Controllers
             };
             Link[] nextJoblinks =
             {
-                new Link("start_job","/jobs/"+queue.nextJob.Id+"/start","Start", WebRequestMethods.Http.Put)
+                new Link("next_action","/jobs/"+queue.nextJob.Id+"/start","Start", WebRequestMethods.Http.Put)
             };
             
             var response = new HALResponse(null)
@@ -61,30 +61,30 @@ namespace com.thameswater.api.Controllers
 
             if (status == null)
             {
-                links.Add( new Link("call_customer", "/jobs/"+job.Id+"/call_customer","Call Customer",WebRequestMethods.Http.Put));
+                links.Add( new Link("next_action", "/jobs/"+job.Id+"/call_customer","Call Customer",WebRequestMethods.Http.Put));
             }
             
             if (status!=null&&status.Equals("1"))
             {
                 job = JobMocks.returnPriority1BlockageInvestigationNotStartedJob();
-                links.Add( new Link("call_customer", "/jobs/"+job.Id+"/call_customer","Call Customer",WebRequestMethods.Http.Put));
+                links.Add( new Link("next_action", "/jobs/"+job.Id+"/call_customer","Call Customer",WebRequestMethods.Http.Put));
             }
 
             if (status!=null&&status.Equals("2"))
             {
                 job = JobMocks.returnPriority1BlockageInvestigationCustomerCalledJob();
-                links.Add( new Link("start_travel", "/jobs/"+job.Id+"/start_travel","Start Travel",WebRequestMethods.Http.Put));
+                links.Add( new Link("next_action", "/jobs/"+job.Id+"/start_travel","Start Travel",WebRequestMethods.Http.Put));
             }
             
             if (status!=null&&status.Equals("3"))
             {
                 job = JobMocks.returnPriority1BlockageInvestigationCustomerCalledJob();
-                links.Add( new Link("arrived", "/jobs/"+job.Id+"/arrived","Arrived",WebRequestMethods.Http.Put));
+                links.Add( new Link("next_action", "/jobs/"+job.Id+"/arrived","Arrived",WebRequestMethods.Http.Put));
             }
             if (status!=null&&status.Equals("4"))
             {
                 job = JobMocks.returnPriority1BlockageInvestigationCustomerCalledJob();
-                links.Add( new Link("arrived", "/jobs/"+job.Id+"/arrived","Arrived",WebRequestMethods.Http.Put));
+                links.Add( new Link("next_action", "/jobs/"+job.Id+"/arrived","Arrived",WebRequestMethods.Http.Put));
             }
             
             links.Add(  new Link("self", "/jobs/"+job.Id));
