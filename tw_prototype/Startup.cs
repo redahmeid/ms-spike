@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+using ThamesWater.Helpers;
 
 namespace ThamesWater
 {
@@ -22,6 +22,7 @@ namespace ThamesWater
             services.AddMvc().AddJsonOptions(options => {
                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                 options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+                options.SerializerSettings.ContractResolver = new SnakeCaseContractResolver();
             });
         }
 
