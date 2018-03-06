@@ -1,8 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Net;
+using System.Net.Http.Headers;
 using Halcyon.HAL;
+using Microsoft.AspNetCore.Http.Headers;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ThamesWater.CustomActionResults;
 using ThamesWater.mocks;
 using ThamesWater.Services;
 
@@ -11,17 +15,16 @@ namespace ThamesWater.api.Controllers
     [Route("jobs")]
     public class JobController : Controller
     {
-        private readonly ILogger _logger;
 
-        public JobController(ILogger<JobController> logger)
+        public JobController()
         {
-            _logger = logger;
+            
         }
 
         [HttpGet]
         public IActionResult GetJobs()
         {
-            _logger.LogInformation("Getting all jobs for.....");
+            
             var queue = JobService.GetWorkQueue();
             var links = new[]
             {
@@ -97,22 +100,26 @@ namespace ThamesWater.api.Controllers
         }
 
         [HttpPut("{jobNumber}/call_customer")]
-        public IActionResult CallCustomer(string jobNumber, string status)
+        public IActionResult CallCustomer(string jobNumber)
         {
-            return Redirect($"/jobs/{jobNumber}?status=2");
+            Response.Headers.Add("Location", "/jobs/{jobNumber}?status=2");
+            return new SeeOtherActionResult($"/jobs/{jobNumber}?status=2");
+            
         }
         
         [HttpPut("{jobNumber}/start_travel")]
         public IActionResult StartTravel(string jobNumber, string status)
         {
-            return Redirect($"/jobs/{jobNumber}?status=3");
+            Response.Headers.Add("Location", "/jobs/{jobNumber}?status=3");
+            return new SeeOtherActionResult($"/jobs/{jobNumber}?status=3");
         }
         
         [HttpPut("{jobNumber}/start")]
-        public IActionResult StartJob(string jobNumber, string status)
+        public IActionResult StartJob(string jobNumber)
         {
-            _logger.LogInformation("Starting job {jobNumber}", jobNumber);
-            return Redirect($"/jobs/{jobNumber}?status=1");
+            Request.HttpContext.Response.Headers.Add("Location", $"/jobs/{jobNumber}?status=1");
+            return new SeeOtherActionResult($"/jobs/{jobNumber}?status=1");
+            
         }
         
         
