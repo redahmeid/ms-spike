@@ -1,17 +1,17 @@
-﻿using com.thameswater.Models;
+﻿using ThamesWater.Models;
 
-namespace tests.mocks
+namespace ThamesWater.mocks
 {
     public class JobDetailsMock
     {
-        public static JobDetails returnPriority1BlockageInvestigation()
+        public static JobDetails ReturnPriority1BlockageInvestigation()
         {
-            JobDetails details = new JobDetails();
-
-            details.sewer_access = "Rear of property";
-            details.description = "Blocked toilet that has now flooded";
-            details.customer_needs_to_be_in = "Yes";
-            return details;
+            return new JobDetails
+            {
+                sewer_access = "Rear of property",
+                description = "Blocked toilet that has now flooded",
+                customer_needs_to_be_in = "Yes"
+            };
         }
     }
 }

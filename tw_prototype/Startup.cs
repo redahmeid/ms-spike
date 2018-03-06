@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Halcyon.Web.HAL.Json;
-using Microsoft.AspNetCore.Mvc.Formatters;
 using Newtonsoft.Json;
+using ThamesWater.Helpers;
 
-namespace tw_prototype
+namespace ThamesWater
 {
     public class Startup
     {
@@ -29,6 +22,7 @@ namespace tw_prototype
             services.AddMvc().AddJsonOptions(options => {
                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                 options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+                options.SerializerSettings.ContractResolver = new SnakeCaseContractResolver();
             });
         }
 

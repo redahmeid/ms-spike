@@ -1,30 +1,23 @@
-﻿using com.thameswater.Models;
+﻿using ThamesWater.Models;
 
-namespace tests.mocks
+namespace ThamesWater.mocks
 {
     public class AddressMocks
     {
-
-
-        public static Address returnClearwaterCourtAddress()
+        public static Address ReturnClearwaterCourtAddress()
         {
-            Address address = new Address();
-
-            address.first_line = "Clearwater Court";
-            address.second_line = "Vastern Road";
-            address.town = "Reading";
-            address.post_code = "RG1 8DB";
-
-            return address;
-
+            return new Address
+            {
+                FirstLine = "Clearwater Court",
+                SecondLine = "Vastern Road",
+                Town = "Reading",
+                PostCode = "RG1 8DB"
+            };
         }
         
-        public static Address returnClearwaterCourtAddressPostCode()
+        public static Address ReturnClearwaterCourtAddressPostCode()
         {
-            Address address = new Address();
-            address.post_code = "RG1 8DB";
-            return address;
-
+            return new Address { PostCode = "RG1 8DB" };
         }
     }
 }
