@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace com.thameswater.Models
+namespace ThamesWater.Models
 {
     public class WorkQueue
     {
-        public Job nextJob { get; set; }
-        public List<Job> queue { get; set; }
+        public Job NextJob { get; set; }
+        public List<Job> Queue { get; set; }
     }
 }

@@ -5322,7 +5322,7 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "com.thameswater/1.0.0": {
+      "ThamesWater/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
@@ -5332,14 +5332,15 @@
           "Microsoft.AspNet.WebApi": "5.2.4",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NET.Test.Sdk": "15.3.0-preview-20170628-02",
+          "Microsoft.NETCore.App": "2.0.0",
           "xunit": "2.2.0",
           "xunit.runner.visualstudio": "2.2.0"
         },
         "compile": {
-          "bin/placeholder/com.thameswater.dll": {}
+          "bin/placeholder/ThamesWater.dll": {}
         },
         "runtime": {
-          "bin/placeholder/com.thameswater.dll": {}
+          "bin/placeholder/ThamesWater.dll": {}
         }
       }
     }
@@ -13716,7 +13717,7 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "com.thameswater/1.0.0": {
+    "ThamesWater/1.0.0": {
       "type": "project",
       "path": "../tw_prototype/com.thameswater.csproj",
       "msbuildProject": "../tw_prototype/com.thameswater.csproj"
@@ -13726,41 +13727,46 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170628-02",
       "Microsoft.NETCore.App >= 2.0.0",
-      "com.thameswater >= 1.0.0",
+      "ThamesWater >= 1.0.0",
       "xunit >= 2.2.0",
       "xunit.runner.visualstudio >= 2.2.0"
     ]
   },
   "packageFolders": {
-    "/Users/redahmeid/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\ian_s\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/redahmeid/Projects/tw_prototype/tests/tests.csproj",
+      "projectUniqueName": "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tests\\tests.csproj",
       "projectName": "tests",
-      "projectPath": "/Users/redahmeid/Projects/tw_prototype/tests/tests.csproj",
-      "packagesPath": "/Users/redahmeid/.nuget/packages/",
-      "outputPath": "/Users/redahmeid/Projects/tw_prototype/tests/obj/",
+      "projectPath": "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tests\\tests.csproj",
+      "packagesPath": "C:\\Users\\ian_s\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/redahmeid/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ian_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/redahmeid/Projects/tw_prototype/tw_prototype/com.thameswater.csproj": {
-              "projectPath": "/Users/redahmeid/Projects/tw_prototype/tw_prototype/com.thameswater.csproj"
+            "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tw_prototype\\com.thameswater.csproj": {
+              "projectPath": "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tw_prototype\\com.thameswater.csproj"
             }
           }
         }
@@ -13779,7 +13785,6 @@
             "version": "[15.3.0-preview-20170628-02, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

@@ -1,13 +1,7 @@
-﻿using System;
-namespace com.thameswater.api.Response
+﻿namespace ThamesWater.api.Response
 {
     public class Response
     {
-        public Response()
-        {
-        }
-
-        
-        public Link[] links {get; set;}
+        public Link[] Links {get; set;}
     }
 }

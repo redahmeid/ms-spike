@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Halcyon.HAL;
 using Microsoft.AspNetCore.Mvc;
 
-namespace tw_prototype.Controllers
+namespace ThamesWater.api.Controllers
 {
     [Route("api/foo")]
     public class FooController : Controller {

@@ -1,8 +1,8 @@
 ﻿
 
-namespace com.thameswater.Models
+namespace ThamesWater.Models
 {
-    public class JobDetails:Model
+    public class JobDetails:IModel
     {
         
         public string description { get; set; }

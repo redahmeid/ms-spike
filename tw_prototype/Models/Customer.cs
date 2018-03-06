@@ -1,17 +1,10 @@
-﻿using System;
-namespace com.thameswater.Models
+﻿namespace ThamesWater.Models
 {
-    public class Customer:Model
+    public class Customer:IModel
     {
-        public Customer()
-        {
-        }
-
-        public string title { get; set; }
-        public string first_name { get; set; }
-        public string surname { get; set; }
-        public Address address { get; set; }
-        
-        
+        public string Title { get; set; }
+        public string FirstName { get; set; }
+        public string Surname { get; set; }
+        public Address Address { get; set; }
     }
 }

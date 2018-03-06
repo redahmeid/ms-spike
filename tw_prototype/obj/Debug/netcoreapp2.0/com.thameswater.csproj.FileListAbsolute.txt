@@ -11,3 +11,17 @@
 /Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.AssemblyInfo.cs
 /Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.dll
 /Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/Debug/netcoreapp2.0/com.thameswater.pdb
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\ThamesWater.deps.json
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\ThamesWater.runtimeconfig.json
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\ThamesWater.runtimeconfig.dev.json
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\ThamesWater.dll
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\bin\Debug\netcoreapp2.0\ThamesWater.pdb
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\obj\Debug\netcoreapp2.0\com.thameswater.csprojResolveAssemblyReference.cache
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\obj\Debug\netcoreapp2.0\com.thameswater.csproj.CoreCompileInputs.cache
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\obj\Debug\netcoreapp2.0\com.thameswater.AssemblyInfoInputs.cache
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\obj\Debug\netcoreapp2.0\com.thameswater.AssemblyInfo.cs
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\obj\Debug\netcoreapp2.0\ThamesWater.dll
+C:\Projects\ThamesWater\Samples\ms-spike\tw_prototype\obj\Debug\netcoreapp2.0\ThamesWater.pdb

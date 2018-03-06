@@ -1,106 +1,109 @@
 ﻿using System;
-using com.thameswater.Models;
-using Microsoft.IdentityModel.Tokens;
+using ThamesWater.Models;
 
-namespace tests.mocks
+namespace ThamesWater.mocks
 {
     public class JobMocks
     {
 
-        public static Job returnPriority1BlockageInvestigationNotStartedWorkQueue()
+        public static Job ReturnPriority1BlockageInvestigationNotStartedWorkQueue()
         {
-            Job job = new Job();
-            job.Id = Guid.NewGuid().ToString();
-            job.priority = 1;
-            job.status = "Not Started";
-            job.type = "Blockage Investigation";
-            job.post_code = AddressMocks.returnClearwaterCourtAddressPostCode().post_code;
-            
-            //job.customer = CustomerMocks.returnMrJBloggsFromReading();
-            //job.job_address = AddressMocks.returnClearwaterCourtAddressPostCode();
-            return job;
+            return new Job
+            {
+                Id = Guid.NewGuid().ToString(),
+                Priority = 1,
+                Status = "Not Started",
+                Type = "Blockage Investigation",
+                PostCode = AddressMocks.ReturnClearwaterCourtAddressPostCode().PostCode,
+                //Customer = CustomerMocks.returnMrJBloggsFromReading(),
+                //JobAddress = AddressMocks.returnClearwaterCourtAddressPostCode()
+            };
         }
         
-        public static Job returnPriority2SewerCleaningNotStartedWorkQueue()
+        public static Job ReturnPriority2SewerCleaningNotStartedWorkQueue()
         {
-            Job job = new Job();
-            job.Id = Guid.NewGuid().ToString();
-            job.priority = 2;
-            job.status = "Not Started";
-            job.type = "Sewer Cleaning - reactive";
-            job.post_code = AddressMocks.returnClearwaterCourtAddressPostCode().post_code;
-            //job.customer = CustomerMocks.returnMrJBloggsFromReading();
-            //job.job_address = AddressMocks.returnClearwaterCourtAddressPostCode();
-            return job;
+            return new Job
+            {
+                Id = Guid.NewGuid().ToString(),
+                Priority = 2,
+                Status = "Not Started",
+                Type = "Sewer Cleaning - reactive",
+                PostCode = AddressMocks.ReturnClearwaterCourtAddressPostCode().PostCode,
+                //Customer = CustomerMocks.returnMrJBloggsFromReading(),
+                //JobAddress = AddressMocks.returnClearwaterCourtAddressPostCode()
+            };
         }
         
-        public static Job returnPriority3BlockageInvestigationNotStartedWorkQueue()
+        public static Job ReturnPriority3BlockageInvestigationNotStartedWorkQueue()
         {
-            Job job = new Job();
-            job.Id = Guid.NewGuid().ToString();
-            job.priority = 3;
-            job.status = "Not Started";
-            job.type = "Blockage Investigation";
-            job.post_code = AddressMocks.returnClearwaterCourtAddressPostCode().post_code;
-            //job.customer = CustomerMocks.returnMrJBloggsFromReading();
-            //job.job_address = AddressMocks.returnClearwaterCourtAddressPostCode();
-            return job;
+            return new Job
+            {
+                Id = Guid.NewGuid().ToString(),
+                Priority = 3,
+                Status = "Not Started",
+                Type = "Blockage Investigation",
+                PostCode = AddressMocks.ReturnClearwaterCourtAddressPostCode().PostCode,
+                //Customer = CustomerMocks.returnMrJBloggsFromReading(),
+                //JobAddress = AddressMocks.returnClearwaterCourtAddressPostCode()            
+            };
         }
         
-        public static Job returnPriority4BlockageInvestigationNotStartedWorkQueue()
+        public static Job ReturnPriority4BlockageInvestigationNotStartedWorkQueue()
         {
-            Job job = new Job();
-            job.Id = Guid.NewGuid().ToString();
-            job.priority = 4;
-            job.status = "Not Started";
-            job.type = "Blockage Investigation";
-            job.post_code = AddressMocks.returnClearwaterCourtAddressPostCode().post_code;
-            //job.customer = CustomerMocks.returnMrJBloggsFromReading();
-            //job.job_address = AddressMocks.returnClearwaterCourtAddressPostCode();
-            return job;
+            return new Job
+            {
+                Id = Guid.NewGuid().ToString(),
+                Priority = 4,
+                Status = "Not Started",
+                Type = "Blockage Investigation",
+                PostCode = AddressMocks.ReturnClearwaterCourtAddressPostCode().PostCode,
+                //Customer = CustomerMocks.returnMrJBloggsFromReading(),
+                //JobAddress = AddressMocks.returnClearwaterCourtAddressPostCode()            
+            };
         }
         
-        public static Job returnPollutionIncidentCompleted()
+        public static Job ReturnPollutionIncidentCompleted()
         {
-            Job job = new Job();
-            job.Id = Guid.NewGuid().ToString();
-            job.status = "Completed";
-            job.type = "Pollution Incident";
-            job.post_code = AddressMocks.returnClearwaterCourtAddressPostCode().post_code;
-            job.time_completed = new DateTime(DateTime.Today.Year,DateTime.Today.Month,DateTime.Today.Day,13,32,0);
-            //job.customer = CustomerMocks.returnMrJBloggsFromReading();
-            //job.job_address = AddressMocks.returnClearwaterCourtAddressPostCode();
-            return job;
+            return new Job
+            {
+                Id = Guid.NewGuid().ToString(),
+                Status = "Completed",
+                Type = "Pollution Incident",
+                PostCode = AddressMocks.ReturnClearwaterCourtAddressPostCode().PostCode,
+                TimeCompleted = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 13, 32, 0),
+                //Customer = CustomerMocks.returnMrJBloggsFromReading(),
+                //JobAddress = AddressMocks.returnClearwaterCourtAddressPostCode()
+            };
         }
 
-        public static Job returnPriority1BlockageInvestigationNotStartedJob()
+        public static Job ReturnPriority1BlockageInvestigationNotStartedJob()
         {
-            Job job = new Job();
-            job.Id = Guid.NewGuid().ToString();
-            job.priority = 1;
-            job.status = "Not Started";
-            job.type = "Blockage Investigation";
-            job.post_code = AddressMocks.returnClearwaterCourtAddress().post_code;
-            job.details = JobDetailsMock.returnPriority1BlockageInvestigation();
-            job.customer = CustomerMocks.returnMrJBloggsFromReading();
-            job.job_address = AddressMocks.returnClearwaterCourtAddress();
-            return job;
+            return new Job
+            {
+                Id = Guid.NewGuid().ToString(),
+                Priority = 1,
+                Status = "Not Started",
+                Type = "Blockage Investigation",
+                PostCode = AddressMocks.ReturnClearwaterCourtAddress().PostCode,
+                Details = JobDetailsMock.ReturnPriority1BlockageInvestigation(),
+                Customer = CustomerMocks.ReturnMrJBloggsFromReading(),
+                JobAddress = AddressMocks.ReturnClearwaterCourtAddress()
+            };
         }
         
-        public static Job returnPriority1BlockageInvestigationCustomerCalledJob()
+        public static Job ReturnPriority1BlockageInvestigationCustomerCalledJob()
         {
-            Job job = new Job();
-            job.Id = Guid.NewGuid().ToString();
-            job.priority = 1;
-            job.status = "Customer Called";
-            job.type = "Blockage Investigation";
-            job.post_code = AddressMocks.returnClearwaterCourtAddress().post_code;
-            job.details = JobDetailsMock.returnPriority1BlockageInvestigation();
-            job.customer = CustomerMocks.returnMrJBloggsFromReading();
-            job.job_address = AddressMocks.returnClearwaterCourtAddress();
-            return job;
+            return new Job
+            {
+                Id = Guid.NewGuid().ToString(),
+                Priority = 1,
+                Status = "Customer Called",
+                Type = "Blockage Investigation",
+                PostCode = AddressMocks.ReturnClearwaterCourtAddress().PostCode,
+                Details = JobDetailsMock.ReturnPriority1BlockageInvestigation(),
+                Customer = CustomerMocks.ReturnMrJBloggsFromReading(),
+                JobAddress = AddressMocks.ReturnClearwaterCourtAddress()
+            };
         }
-        
-        
     }
 }

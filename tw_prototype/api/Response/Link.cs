@@ -1,14 +1,9 @@
-﻿using System;
-namespace com.thameswater.api.Response
+﻿namespace ThamesWater.api.Response
 {
     public class Link
     {
-        public Link()
-        {
-        }
-        public string rel { get; set; }
-        public string url { get; set; }
-        public string defaultText { get; set; }
-
+        public string Rel { get; set; }
+        public string Url { get; set; }
+        public string DefaultText { get; set; }
     }
 }

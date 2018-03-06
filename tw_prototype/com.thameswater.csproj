@@ -2,10 +2,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <GenerateProgramFile>false</GenerateProgramFile>
+    <AssemblyName>ThamesWater</AssemblyName>
+    <RootNamespace>ThamesWater</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
-    <Folder Include="Models\" />
     <Folder Include="api\" />
     <Folder Include="api\Controllers\" />
     <Folder Include="api\Response\" />

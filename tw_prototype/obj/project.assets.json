@@ -13711,28 +13711,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/redahmeid/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\ian_s\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/redahmeid/Projects/tw_prototype/tw_prototype/com.thameswater.csproj",
-      "projectName": "com.thameswater",
-      "projectPath": "/Users/redahmeid/Projects/tw_prototype/tw_prototype/com.thameswater.csproj",
-      "packagesPath": "/Users/redahmeid/.nuget/packages/",
-      "outputPath": "/Users/redahmeid/Projects/tw_prototype/tw_prototype/obj/",
+      "projectUniqueName": "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tw_prototype\\com.thameswater.csproj",
+      "projectName": "ThamesWater",
+      "projectPath": "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tw_prototype\\com.thameswater.csproj",
+      "packagesPath": "C:\\Users\\ian_s\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\ThamesWater\\Samples\\ms-spike\\tw_prototype\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/redahmeid/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ian_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -13774,7 +13779,6 @@
             "version": "[15.3.0-preview-20170628-02, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

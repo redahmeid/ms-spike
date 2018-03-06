@@ -1,21 +1,18 @@
-﻿using com.thameswater.Models;
+﻿using ThamesWater.Models;
 
-namespace tests.mocks
+namespace ThamesWater.mocks
 {
     public class CustomerMocks
     {
-        public static Customer returnMrJBloggsFromReading()
+        public static Customer ReturnMrJBloggsFromReading()
         {
-            Customer customer = new Customer();
-
-            customer.address = AddressMocks.returnClearwaterCourtAddress();
-            customer.title = "Mr";
-            customer.first_name = "J";
-            customer.surname = "Bloggs";
-
-            return customer;
-
-
+            return new Customer
+            {
+                Address = AddressMocks.ReturnClearwaterCourtAddress(),
+                Title = "Mr",
+                FirstName = "J",
+                Surname = "Bloggs"
+            };
         }
     }
 }

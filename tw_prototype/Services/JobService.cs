@@ -1,30 +1,31 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using com.thameswater.Models;
-using tests.mocks;
+using ThamesWater.mocks;
+using ThamesWater.Models;
 
-namespace tw_prototype.Services
+namespace ThamesWater.Services
 {
     public class JobService
     {
 
-        public static WorkQueue getWorkQueue()
+        public static WorkQueue GetWorkQueue()
         {
-            WorkQueue queue = new WorkQueue();
-            List<Job> jobs = new List<Job>();
+            var queue = new WorkQueue
+            {
+                NextJob = JobMocks.ReturnPriority1BlockageInvestigationNotStartedWorkQueue()
+            };
 
-            queue.nextJob = JobMocks.returnPriority1BlockageInvestigationNotStartedWorkQueue();
-            
-            jobs.Add(JobMocks.returnPriority2SewerCleaningNotStartedWorkQueue());
-            jobs.Add(JobMocks.returnPriority4BlockageInvestigationNotStartedWorkQueue());
-            jobs.Add(JobMocks.returnPriority3BlockageInvestigationNotStartedWorkQueue());           
-            jobs.Add(JobMocks.returnPollutionIncidentCompleted());
+            var jobs = new List<Job>
+            {
+                JobMocks.ReturnPriority2SewerCleaningNotStartedWorkQueue(), 
+                JobMocks.ReturnPriority4BlockageInvestigationNotStartedWorkQueue(), 
+                JobMocks.ReturnPriority3BlockageInvestigationNotStartedWorkQueue(), 
+                JobMocks.ReturnPollutionIncidentCompleted()
+            };
 
-            queue.queue = jobs.OrderBy(j => j.time_completed).ThenBy(j => j.priority).ToList();
+            queue.Queue = jobs.OrderBy(j => j.TimeCompleted).ThenBy(j => j.Priority).ToList();
             
             return queue;
         }
-
-        
     }
 }
